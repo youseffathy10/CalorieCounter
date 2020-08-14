@@ -1,0 +1,318 @@
+*
+{
+    margin:0px;
+    padding:0px;
+    box-sizing: 0px;
+}
+html
+{
+    font-size: 0.8em;
+}
+
+.Navbar
+{   width:100%;
+    height:4em;
+    background-color: rgb(0,0,0,0.7);
+    position: fixed;
+    z-index: 2;
+   
+}
+.Navbar a
+{    float:left;
+    color:rgb(255,255,255,0.8);
+    padding:1em 2em;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: sans-serif;
+    transition: 0.9s all;
+    
+}
+.Navbar a:hover
+{
+    background-color:rgb(0,0,0,0.7);
+    cursor: pointer;
+    padding:0.9em;
+}
+
+/* CONTENTS IN THE NAVBAR*/
+
+.dropbtn {
+  background-color: rgb(0,0,0,0.01);
+  color:rgb(255,255,255,0.8);
+  padding: 1em;
+  font-size: 1.2em;
+  border: none;
+  
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  float:left;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:rgba(253, 250, 250, 0.2);
+  min-width: 6em;
+  box-shadow: 0em 1.2em 1.6em 0em rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 1.5em 1.6em;
+  text-decoration: none;
+  display: block;
+  width:100%;
+  text-align: center;
+  box-sizing: border-box;
+ 
+  
+}
+
+
+.dropdown-content a:hover 
+{background-color: #ddd;
+  transition: 0.9s all;
+   padding:1em;
+   
+}
+
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: rgb(0,0,0,0.7);
+  cursor: pointer;
+  transition: 0.9s all;}
+
+#logo
+{
+  
+  float:right;
+  padding:0.3em;
+  margin-top:0.46em;
+  font-size: 1.1em;
+  margin-right:1em;
+  color: rgb(255, 255, 255,0.8);
+        
+}
+
+#logo span
+{
+  background-color: rgba(209, 95, 19);
+  padding:0.01em;
+  border-radius:5px;
+}
+
+.grid
+{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    grid-gap: 2em;
+    padding:20em;
+    grid-auto-rows: minmax(100px,auto);
+}
+.contents
+{   
+   border:0.0001em solid;
+   border-color: rgba(233, 235, 240, 0.2);
+   box-shadow: 0em 1em 1.2em 0em rgba(0,0,0,0.2);
+    border-radius: 20px;
+    background-color: rgba(250, 250, 250, 0.7058);
+    text-align: center;
+
+}
+
+.grid div img 
+{
+    width:50%;
+    border-radius: 360px;
+
+
+}
+.paragraph
+{
+ width:20em;
+ padding:1em;
+ word-spacing: 0.1rem;
+ font-size: 15px;
+ font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+h1
+{
+  font-size: 1.6em;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.flx
+{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding:1em;
+}
+
+.textme
+{border:0.0001em solid;
+border-color: rgba(233, 235, 240, 0.2);
+box-shadow: 0em 1em 1.2em 0em rgba(0,0,0,0.2);
+ border-radius: 15px;
+ background-color: rgba(250, 250, 250, 0.7058);
+ padding:20px;
+
+}
+input[type=text]  {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+textarea
+  {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    height:200px;
+    
+  }
+ .textme label
+ { font-size: 20px;
+    font-weight: 400;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+ } 
+ input[type="submit"]
+ { border:0px;
+  width:200px;
+  height:40px;
+  background-color: rgb(70, 140, 219);
+  border-radius: 15px;
+  color:rgb(255, 255, 255,0.9);
+  font-size:20px;
+  font-weight: 400px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+ }
+ input[type="submit"]:hover
+ {   color:black;
+     cursor: pointer;
+     background-color: rgb(12, 191, 214);
+    
+     
+ }
+
+ .overlay {
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+
+  
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 0;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    max-height: 90%;
+    overflow: auto;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+  
+  
+  .popup h4 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+    text-align: center;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: #06D85F;
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+    line-height: 20pt;
+  }
+  .popup img
+  { margin-left:6.5em;
+    width:50%;
+    height:50%;
+  }
+  
+@media (max-width:768px)
+{
+  .popup img
+  {
+     margin-left:5em;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+
+ /*FOOTER STYLE*/
+#footer
+{ 
+  width:100vw;
+  background-color: rgba(0,0,0);
+  color:white;
+  height:1.5em;
+  padding:1.5em;
+  font-size: 1.2em;
+  font-weight: 200;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+
+}
+@media (max-width:768px)
+{
+    .grid
+    {
+        padding:8em;
+    }
+    #logo
+    {
+        visibility: hidden;
+    }
+}
