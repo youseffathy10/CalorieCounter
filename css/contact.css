@@ -288,6 +288,16 @@ textarea
   .popup{
     width: 70%;
   }
+  .Navbar
+  {
+    display: flex;
+    flex-direction: row;
+  }
+  .navbar a 
+  {
+    padding:1em 1em;
+  }
+  
 }
 
 
@@ -297,8 +307,8 @@ textarea
   width:100vw;
   background-color: rgba(0,0,0);
   color:white;
-  height:1.5em;
-  padding:1.5em;
+  height:2em;
+  padding:1em;
   font-size: 1.2em;
   font-weight: 200;
   font-family: 'Times New Roman', Times, serif;
@@ -309,7 +319,8 @@ textarea
 {
     .grid
     {
-        padding:8em;
+        padding:10px;
+     
     }
     #logo
     {
