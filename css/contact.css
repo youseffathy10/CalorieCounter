@@ -174,6 +174,11 @@ input[type=text]  {
     margin-bottom: 16px; 
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
   }
+
+  input[type=text]:hover
+  {
+    padding:40px;
+  }
 textarea
   {
     width: 100%; /* Full width */
@@ -325,5 +330,9 @@ textarea
     #logo
     {
         visibility: hidden;
+    }
+    #footer
+    {
+      font-size:1em;
     }
 }

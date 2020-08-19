@@ -12,7 +12,8 @@ html{
 
 /*NAVBAR STYLE*/
 .Navbar
-{   width:100%;
+{ 
+  width:100%;
     height:4em;
     background-color: rgb(0,0,0,0.7);
     position: fixed;
@@ -116,6 +117,11 @@ html{
     margin-right:0.9em;
     visibility: hidden;
   }
+  .Navbar
+ {
+  display:flex;
+  flex-direction: row;  
+ }
   .Navbar a
   {
     padding:1em 1em;
@@ -234,8 +240,10 @@ html{
   {
     padding-left:5em;
   }
-
+ 
  }
+
+
  .third div , .maindiv div
  {
   position: absolute;
@@ -270,15 +278,22 @@ html{
   
  /*FOOTER STYLE*/
   #footer
-  {
+  { margin-top:10vh;
     width:100vw;
     background-color: rgba(0,0,0);
     color:white;
-    height:3.5em;
-    padding:1.5em;
+    height:4em;
+    padding:1em;
     font-size: 1.2em;
     font-weight: 200;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
 
+  }
+  @media (max-width:768px)
+  {
+    #footer
+    {
+      font-size:1em;
+    }
   }
