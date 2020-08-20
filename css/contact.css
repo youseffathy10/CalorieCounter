@@ -175,10 +175,7 @@ input[type=text]  {
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
   }
 
-  input[type=text]:hover
-  {
-    padding:40px;
-  }
+
 textarea
   {
     width: 100%; /* Full width */
